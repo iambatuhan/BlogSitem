@@ -1,0 +1,49 @@
+﻿@model IEnumerable<EntitiyLayer.Concrete.Comment>
+@foreach (var x in Model)
+{
+    <div class="pt-5">
+        <h3 class="mb-5"></h3>
+        <ul class="comment-list">
+            <li class="comment">
+                <div class="vcard">
+                    <img src="~/miniblog/images/indir (7).jpg" alt="Image placeholder">
+                </div>
+                <div class="comment-body">
+                    <h3>@x.UserName</h3>
+                    <div class="meta">@(((DateTime)@x.Tarih).ToString("dd-MMM-yyyy"))</div>
+                    <p>@x.CommentText</p>
+                    <p><a href="#" class="reply rounded">Reply</a></p>
+                </div>
+            </li>
+
+            <li class="comment">
+                <div class="vcard">
+                    <img src="~/miniblog/images/indir(7).jpg" alt="Image placeholder">
+                </div>
+                <div class="comment-body">
+                    <h3>@x.UserName</h3>
+                    <div class="meta">@(((DateTime)@x.Tarih).ToString("dd-MMM-yyyy"))</div>
+                    <p>@x.CommentText</p>
+                    <p><a href="#" class="reply rounded">Reply</a></p>
+                </div>
+
+
+            </li>
+
+            <li class="comment">
+                <div class="vcard">
+                    <img src="~/miniblog/images/indir (7).jpg" alt="Image placeholder">
+                </div>
+                <div class="comment-body">
+                    <h3>@x.UserName</h3>
+                    <div class="meta">@(((DateTime)@x.Tarih).ToString("dd-MMM-yyyy"))</div>
+                    <p>@x.CommentText</p>
+                    <p><a href="#" class="reply rounded">Reply</a></p>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+}
+@Html.Action("LeaveComment", "Comment")

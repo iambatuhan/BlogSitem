@@ -1,0 +1,68 @@
+﻿@model IEnumerable<EntitiyLayer.Concrete.About>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div class="site-cover site-cover-sm same-height overlay single-page" style="background-image: url('/miniblog/images/img_4.jpg');">
+    <div class="container">
+        <div class="row same-height justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <div class="post-entry text-center">
+                    <h1 class="">About Us</h1>
+                    <p class="lead mb-4 text-whi font-italic">Aşağıya doğru inerek sitemiz hakkında daha fazla bilgi edinmek ister misiniz?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-md-2">
+                <img src="~/miniblog/images/person11.jpg" height="250" width="300" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-5 mr-auto order-md-1">
+                <h2>Siteyi Yapan Hakkında</h2>
+                <p>20.09.1998 yılında doğdum şuan da 23 yaşındayım.Fırat Üniversitesi Yazılım Muhendisliği 4.sınıf öğrencisiyim.</p>
+                <h2>Bildiğim Yazılım dilleri</h2>
+                <ul class="ul-check list-unstyled success">
+                    <li>Pyhton</li>
+                    <li>C#</li>
+                    <li>MSSQL Veri Sorgulama Dili</li>
+                </ul>
+                <p>Github linkim:</p>
+                <a href="https://github.com/iambatuhan">https://github.com/iambatuhan</a>
+                
+
+            </div>
+        </div>
+   
+    </div>
+</div>
+}
+@Html.Action("MeetTheTeam", "About")
+<div class="site-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/miniblog/images/indir (10).jpg" height="1000" width="1000" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-md-5 ml-auto">
+                <h2>Bu Site Neyi Amaçlamaktadır?</h2>
+                <p class="mb-4">Öncelikle blog yazmayı seven insanlara yeni bir alternatif oluşturmak ve bu insanların insanların kişisel bilgilerini 3.taraf sahıslara paylaşılmasını önlemek ve bu bilgilerin kimseyle  paylaşılamayacağını taahhüt eder.Bu site herhangi bir kar amacı gütmemektedir.Tamamen insanların bağımsız ve özgürlükçü hiçbir sansüre maruz kalmadan düşüncelerini paylaşabilmek için yapılmıştır. </p>
+                <h2>Bu Sitede Neler Yapabilirsiniz?</h2>
+                <ul class="ul-check list-unstyled success">
+                    <li></li>
+                    <li>Üye olmadan istediğiniz bloğu okuma</li>
+                    <li>Yazar olup tamamen ücretsiz blog olusturma</li>
+                    <li>Bloglara yorum yapabilme</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Action("AddMail", "Mail")
+@Html.Action("About", "About")
+

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<EntitiyLayer.Concrete.Blog> 
+    @foreach (var x in Model)
+    {
+<div class="post-content-body font-italic">
+  
+       <p><span style="font-family:'Segoe Script'"></span><span style="font-size:20px;" > @x.BlogContent</span></p>
+    
+    <div class="row mb-5 mt-4">
+        <div class="col-md-10 mb-4">
+            <img src="@x.BlogImage" alt="Image placeholder " class="img-fluid rounded" width="1" >
+        </div>
+        
+    </div>
+ 
+</div>
+    }

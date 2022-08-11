@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "AddContact";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<div class="site-cover site-cover-sm same-height overlay single-page" style="background-image: url('/miniblog/images/img_4.jpg');">
+    <div class="container">
+        <div class="row same-height justify-content-center">
+            <div class="col-md-10 col-lg-10">
+                <div class="post-entry text-center">
+                    <h1 class="">İletişime Geçin</h1>
+                    <p class="lead mb-4 text-capitalize"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-section bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 mb-5">
+
+
+
+                <form action="#" class="p-5 bg-secondary">
+
+
+                    <div class="row form-group">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <label class="text-black" for="fname">First Name</label>
+                            <input type="text" name="Name" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="text-black" for="lname">Last Name</label>
+                            <input type="text" name="SurName" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+
+                        <div class="col-md-12">
+                            <label class="text-black" for="email">Email</label>
+                            <input type="email" name="Mail" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+
+                        <div class="col-md-12">
+                            <label class="text-black" for="subject">Subject</label>
+                            <input  name="Subject" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="text-black" for="message">Message</label>
+                            <textarea name="Message"  id="message" cols="30" rows="7" class="form-control" placeholder="Mesajınızı Buruya Yazınız..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="col-md-5">
+
+                <div class="p-4 mb-3 bg-light">
+
+
+                    <p class="mb-0 font-weight-normal"> Telefon</p>
+                    <p class="mb-4"><a href="#">+9 0537 740 6994</a></p>
+
+                    <p class="mb-0 font-weight-normal">Email Address</p>
+                    <p class="mb-lg-4"><a href="#">batu.2828@hotmail.com</a></p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<EntitiyLayer.Concrete.Blog>
+@{
+    ViewBag.Title = "AdminBlogList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>AdminBlogList</h2>
+<br />
+<link rel="stylesheet" href=" ~/miniblog/fonts/icomoon/StyleSheet5.css">
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Baslık</th>
+        <th>Kategori</th>
+        <th>Tarih</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        <th>Detaylar</th>
+        <th>Yorumlar</th>
+    </tr>
+    @foreach(var x in Model)
+            {
+<tr>
+    <td>@x.BlogID</td>
+    <td>@x.BlogTitle</td>
+    <td>@x.Category.CategoryID</td>
+    <td>@x.BlogDate.ToShortDateString()</td>
+    <td><a href="/Blog/DeleteBlog/@x.BlogID" class="custom-btn btn-5" style="text-align:center" >Sil</a></td>
+    <td><a href="/Blog/UpdateBlog/@x.BlogID " class="custom-btn btn-6" style="text-align:center">Güncelle</a></td>
+    <td><a href="/Blog/BlogDetails/@x.BlogID" class="custom-btn btn-7" style="text-align:center">Detaylar</a></td>
+    <td><a href="/Blog/GetCommentByBlog/@x.BlogID" class="custom-btn btn-15" style="text-align:center">Yorumlar</a></td>
+
+
+
+</tr>
+            }
+</table>
+<a href="/Blog/AddNewBlog/" class="custom-btn btn-8" style="text-align:center">Yeni Blog Ekle</a>
